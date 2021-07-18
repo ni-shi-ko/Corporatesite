@@ -1,0 +1,137 @@
+#header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+  .header-title {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .header-nav {
+    display: flex;
+    border-bottom: 1px solid #000000;
+    width: 55%;
+  }
+  .header-nav ul {
+    display: flex;
+  }
+  .list {
+    margin-right: 50px;
+     list-style: none;
+    font-size: 20px;
+  }
+  .icon {
+    list-style: none;
+    margin-left: 50px;
+  }
+    a {
+    color: #000;
+    text-decoration: none;
+  }
+
+.main-vis {
+  background-image: url("../img/business2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10%;
+}
+.main-vis p {
+  color: #fff;
+  font-size: 40px;
+}
+.recruit {
+  margin: 5% 0;
+}
+.main-text {
+  margin: 0 auto;
+ border-bottom: 1px solid #000;
+ width: 60%;
+ text-align: center;
+}
+.main-text h1 {
+  font-size: 35px;
+  margin-bottom: 2%;
+}
+.main-text p {
+  line-height: 3.0;
+  font-size: 15px;
+  margin-bottom: 2%;
+}
+.detail {
+  text-align: center;
+}
+.detail-list {
+  margin: 0 3%;
+}
+.detail-list h3{
+  margin: 3% 0;
+  font-size: 25px;
+}
+.detail-list p {
+  font-size: 20px;
+}
+.detail-list li {
+  font-size: 20px;
+  margin-bottom: 1%;
+  list-style: none;
+}
+.entry {
+  text-align: center;
+  margin: 2% 0;
+}
+#contact {
+ text-align: center;
+}
+.contact-title {
+  font-size: 40px;
+  margin-bottom: 3%;
+}
+.contact-wrap {
+  margin-bottom: 5%;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  outline: none;
+  width: 30%;
+}
+textarea {
+  width: 60%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+button {
+  background-color: #000;
+  color: #fff;
+  margin-top: 2%;
+  padding: 2% 5%;
+  border: none;
+}
+
+#footer {
+  margin-top: 3%;
+  padding: 1% 0;
+  background-color: #dcdcdc;
+  color: #fff;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrap h1 {
+  margin-left: 50px;
+}
+.footer-nav {
+  display: flex;
+}
+.footer-list {
+  list-style: none;
+  margin-left: 50px;
+}
