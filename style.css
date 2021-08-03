@@ -246,6 +246,20 @@
   z-index: 30;
 }
 
+#service .btn {
+  position: absolute;
+  border: 1px solid #000;
+  padding: 2% 5%;
+  bottom: 10%;
+  left: 25%;
+  background-color: #fff;
+}
+
+#service .btn a {
+  text-decoration: none;
+  color: #000;
+}
+
 #news {
   padding: 5% 0 7% 0;
   width: 60%;
