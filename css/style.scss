@@ -36,9 +36,12 @@ $backdiv:rgb(220, 220, 220);
   border: 1px solid rgba(0,0,0,.125);
   border-radius:0 .25rem;
 }
+html { 
+  scroll-behavior: smooth;
+}
 
 #main {
-  background-image: url("./img/business2.jpg");
+  background-image: url("../img/business2.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -89,7 +92,6 @@ $backdiv:rgb(220, 220, 220);
 }
 
 #about {
-  
   position: relative;
   .about-title {
   @include Title;;
@@ -376,9 +378,14 @@ $backdiv:rgb(220, 220, 220);
   }
   .footer-nav {
     align-items: center;
-  }
-  .footer-list {
+      .footer-list {
     list-style: none;
     margin-bottom: 10%;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  }
+
   }
 }
