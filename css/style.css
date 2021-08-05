@@ -20,6 +20,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
   padding: 3% 0;
 }
 
@@ -27,6 +28,7 @@ html {
   text-align: center;
   font-size: 20px;
   margin-left: 50px;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,11 +69,12 @@ html {
 
 #main #header .header-nav .icon {
   margin-left: 50px;
+  color: #000;
 }
 
 #main #header .header-nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 #main #header #nav {
@@ -140,7 +143,7 @@ html {
     position: absolute;
     width: 35px;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transition: 0.8s;
     transition: 0.8s;
   }

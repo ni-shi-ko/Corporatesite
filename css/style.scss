@@ -58,11 +58,13 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
   padding: 3% 0;
   .header-title {
     text-align: center;
     font-size: $font_size+5px;
     margin-left: 50px;
+    color: #000;
   @include sp {
       margin-left: 20px;
       line-height: 2.0;
@@ -87,10 +89,11 @@ html {
   }
   .icon {
     margin-left: 50px;
+    color: #000;
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
   }
 
@@ -150,7 +153,7 @@ html {
   position: absolute;
   width: 35px;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
   transition: 0.8s;
 }
   #line1 {
