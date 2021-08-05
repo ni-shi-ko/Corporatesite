@@ -53,6 +53,7 @@ html {
   background-size: cover;
   background-position: center;
   position: relative;
+
   color: #fff;
 #header {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -547,7 +548,7 @@ html {
   width: 80%;
   margin-bottom: 10%;
   @include sp {
-  
+
     padding: 5%
   }
   .contact-title {
@@ -566,7 +567,7 @@ html {
   border: none;
   border-bottom: 1px solid #000;
   background-color: transparent;
-  width: 30%;
+  width: 40%;
   outline: 0;
   box-sizing: border-box;
   @include sp {
@@ -577,7 +578,7 @@ html {
 .msg {
   margin: 0 auto;
   border: none;
-  width: 60%;
+  width: 80%;
   border-bottom: 1px solid #000;
   background-color: transparent;
   outline: 0;

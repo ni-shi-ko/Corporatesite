@@ -257,7 +257,7 @@
   border: none;
   border-bottom: 1px solid #000;
   background-color: transparent;
-  width: 30%;
+  width: 40%;
   outline: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -273,7 +273,7 @@
 #contact .msg {
   margin: 0 auto;
   border: none;
-  width: 60%;
+  width: 80%;
   border-bottom: 1px solid #000;
   background-color: transparent;
   outline: 0;
