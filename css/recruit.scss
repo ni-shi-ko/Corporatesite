@@ -1,6 +1,12 @@
 $font_size:15px;
 $backdiv:rgb(220, 220, 220);
 
+@mixin sp {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 @mixin Title{
     font-size: $font_size+25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -20,6 +26,11 @@ $backdiv:rgb(220, 220, 220);
     text-align: center;
     font-size: 20px;
     margin-left: 50px;
+     @include sp {
+      margin-left: 20px;
+      line-height: 2.0;
+    }
+
   }
   .header-nav {
     display: flex;
@@ -41,7 +52,96 @@ $backdiv:rgb(220, 220, 220);
     color: #000;
     text-decoration: none;
   }
+  @include sp {
+    display: none;
+  }
 }
+  #nav {
+    display: none;
+  @include sp {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    transition: .7s;
+    display: block;
+    z-index: 100;
+ &.in{
+  transform: translateX(100%);
+}
+  ul {
+    padding-top: 80px;
+  }
+  li {
+     list-style-type: none;
+    font-size: 20px;
+  }
+  a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 20px;
+  padding: 10px;
+  transition: .5s;
+  &:hover {
+  color: #ffffff;
+  background:dodgerblue;
+  border-bottom: none;
+  }
+}
+ }
+ 
+}
+
+  #hamburger {
+  display: none;
+    @include sp {
+    top: 20px;
+    right: 15px;
+    width: 50px;
+    height: 44px;
+   position: absolute;
+   cursor: pointer;
+   display: block;
+   z-index: 100;
+    transition: 0.4s;
+  .inner_line {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #000;
+  transition: 0.8s;
+}
+  #line1 {
+  top: 0;
+}
+#line2 {
+  top: 10px;
+}
+#line3 {
+  bottom: 20px;
+}
+.line_1,.line_2,.line_3{
+  background: #000000;
+}
+.line_1 {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+   }
+
+  }
 }
 
 .main-vis {
@@ -118,6 +218,9 @@ $backdiv:rgb(220, 220, 220);
   font-size: 15px;
   margin-bottom: 2%;
  }
+ @include sp {
+   width: 90%;
+ }
 }
 }
 
@@ -144,6 +247,63 @@ $backdiv:rgb(220, 220, 220);
   margin: 2% 0;
 }
 
+}
+
+
+#contact {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #000;
+  width: 80%;
+  margin-bottom: 10%;
+  @include sp {
+  
+    padding: 5%
+  }
+  .contact-title {
+    @include Title;
+  }
+  .contact-wrap {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $font_size;
+  }
+  form {
+  text-align: center;
+  margin-top: 2%;
+}
+.input {
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  width: 30%;
+  outline: 0;
+  box-sizing: border-box;
+  @include sp {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+}
+.msg {
+  margin: 0 auto;
+  border: none;
+  width: 60%;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  outline: 0;
+  margin-top: 5%;
+  @include sp {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.btn {
+  background-color: #000;
+  color: #fff;
+  margin: 5% 0;
+  padding: 2% 5%;
+  border:none;
+}
 }
 
 #footer {

@@ -15,6 +15,13 @@
   margin-left: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  #header .header-title {
+    margin-left: 20px;
+    line-height: 2.0;
+  }
+}
+
 #header .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +52,109 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  #header .header-nav {
+    display: none;
+  }
+}
+
+#header #nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #header #nav {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    -webkit-transition: .7s;
+    transition: .7s;
+    display: block;
+    z-index: 100;
+  }
+  #header #nav.in {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  #header #nav ul {
+    padding-top: 80px;
+  }
+  #header #nav li {
+    list-style-type: none;
+    font-size: 20px;
+  }
+  #header #nav a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 20px;
+    padding: 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  #header #nav a:hover {
+    color: #ffffff;
+    background: dodgerblue;
+    border-bottom: none;
+  }
+}
+
+#header #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #header #hamburger {
+    top: 20px;
+    right: 15px;
+    width: 50px;
+    height: 44px;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #header #hamburger .inner_line {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  #header #hamburger #line1 {
+    top: 0;
+  }
+  #header #hamburger #line2 {
+    top: 10px;
+  }
+  #header #hamburger #line3 {
+    bottom: 20px;
+  }
+  #header #hamburger .line_1, #header #hamburger .line_2, #header #hamburger .line_3 {
+    background: #000000;
+  }
+  #header #hamburger .line_1 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+  }
+  #header #hamburger .line_2 {
+    opacity: 0;
+  }
+  #header #hamburger .line_3 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+}
+
 .main-vis {
   background-image: url("../img/business2.jpg");
   background-size: cover;
@@ -68,6 +178,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service-wrap {
+    width: 90%;
+  }
+}
+
 #service .service_first {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,13 +196,31 @@
   margin-bottom: 7%;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_first {
+    display: inline;
+  }
+}
+
 #service .service_first img {
   width: 60%;
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_first img {
+    width: 100%;
+  }
+}
+
 #service .service_first .service-inner_first {
   margin-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  #service .service_first .service-inner_first {
+    margin-left: 0;
+  }
 }
 
 #service .service_first h3 {
@@ -96,9 +230,23 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_first h3 {
+    margin: 3% 0;
+  }
+}
+
 #service .service_first p {
   line-height: 3.0;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #service .service_first p {
+    line-height: 1.5;
+    padding: 5%;
+    border: 1px solid #000;
+  }
 }
 
 #service .service_second {
@@ -113,13 +261,44 @@
   margin-bottom: 7%;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_second {
+    display: inline;
+  }
+}
+
+#service .service_second .service-img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #service .service_second .service-img {
+    width: 100%;
+    display: block;
+    margin-top: 5%;
+  }
+}
+
 #service .service_second img {
   width: 60%;
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_second img {
+    width: 100%;
+    display: none;
+  }
+}
+
 #service .service_second .service-inner_second {
   margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #service .service_second .service-inner_second {
+    margin: 5% 0;
+  }
 }
 
 #service .service_second h3 {
@@ -129,9 +308,23 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_second h3 {
+    margin: 3% 0;
+  }
+}
+
 #service .service_second p {
   line-height: 3.0;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #service .service_second p {
+    line-height: 1.5;
+    padding: 10% 5%;
+    border: 1px solid #000;
+  }
 }
 
 #service .service_third {
@@ -146,13 +339,32 @@
   margin-bottom: 7%;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_third {
+    display: inline;
+  }
+}
+
 #service .service_third img {
   width: 60%;
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_third img {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
 #service .service_third .service-inner_third {
   margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #service .service_third .service-inner_third {
+    margin: 5% 0;
+  }
 }
 
 #service .service_third h3 {
@@ -162,9 +374,18 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  #service .service_third h3 {
+    margin: 3% 0;
+  }
+}
+
 #service .service_third p {
   line-height: 3.0;
   text-align: center;
+  line-height: 1.5;
+  padding: 10% 5%;
+  border: 1px solid #000;
 }
 
 #contact {
@@ -173,6 +394,12 @@
   border: 1px solid #000;
   width: 80%;
   margin-bottom: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 5%;
+  }
 }
 
 #contact .contact-title {
@@ -202,6 +429,13 @@
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  #contact .input {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+}
+
 #contact .msg {
   margin: 0 auto;
   border: none;
@@ -210,6 +444,13 @@
   background-color: transparent;
   outline: 0;
   margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .msg {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 #contact .btn {
