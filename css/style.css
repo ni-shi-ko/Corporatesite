@@ -80,6 +80,13 @@ html {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 5%;
+    margin-top: 3%;
+  }
+}
+
 #about .about-title {
   font-size: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -89,6 +96,7 @@ html {
 @media screen and (max-width: 768px) {
   #about .about-title {
     text-align: center;
+    margin-bottom: 5%;
   }
 }
 
@@ -160,6 +168,7 @@ html {
   #about .inner {
     width: 100%;
     margin-bottom: 5%;
+    padding: 0;
   }
 }
 
@@ -184,6 +193,7 @@ html {
 @media screen and (max-width: 768px) {
   #about .second_inner {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -208,7 +218,7 @@ html {
 @media screen and (max-width: 768px) {
   #about .third_inner {
     width: 100%;
-    padding: 1%;
+    padding: 0;
   }
 }
 
@@ -411,7 +421,8 @@ html {
 
 @media screen and (max-width: 768px) {
   #news {
-    width: 80%;
+    width: 90%;
+    margin-bottom: 5%;
   }
 }
 
@@ -478,7 +489,7 @@ html {
 
 @media screen and (max-width: 768px) {
   #recruit .recruit-wrap {
-    padding: 5%;
+    padding: 8% 0;
   }
 }
 
@@ -492,7 +503,7 @@ html {
 
 @media screen and (max-width: 768px) {
   #recruit .recruit-img {
-    width: 100%;
+    width: 90%;
     position: inherit;
   }
 }
@@ -566,6 +577,12 @@ html {
   margin-bottom: 10%;
 }
 
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 5%;
+  }
+}
+
 #contact .contact-title {
   font-size: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -595,7 +612,8 @@ html {
 
 @media screen and (max-width: 768px) {
   #contact .input {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 4%;
   }
 }
 
@@ -611,7 +629,8 @@ html {
 
 @media screen and (max-width: 768px) {
   #contact .msg {
-    width: 60%;
+    width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -621,12 +640,6 @@ html {
   margin: 5% 0;
   padding: 2% 5%;
   border: none;
-}
-
-@media screen and (max-width: 768px) {
-  #contact {
-    width: 100%;
-  }
 }
 
 #footer {
